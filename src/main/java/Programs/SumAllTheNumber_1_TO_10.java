@@ -1,6 +1,6 @@
 package Programs;
 // Print sum of all the numbers from 1 - 10
-public class Sum_1_TO_10 {
+public class SumAllTheNumber_1_TO_10 {
 
 	public static void main(String[] args) {
 
