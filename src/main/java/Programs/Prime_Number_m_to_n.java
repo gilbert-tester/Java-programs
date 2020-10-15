@@ -11,30 +11,36 @@ public class Prime_Number_m_to_n {
 
 	public static void main(String[] args) {
 
+		int m, n, count = 0, totalPrime = 0;
 		Scanner input = new Scanner(System.in);
-		int num;
-		int count = 0;
+		System.out.print("Enter initial number : ");
+		m = input.nextInt();
 
-		System.out.print("Enter positive intiger : ");
-		num = input.nextInt();
+		System.out.print("Enter ending number : ");
+		n = input.nextInt();
 
-		for (int i = 2; i < num; i++) {
+		for (int i = m; i <= n; i++) {
+			for (int j = 2; j <= i - 1; j++) {
 
-			if (num % i == 0) {
-				count++;
-				break;
+				if (i % j == 0) {
+
+					count++;
+					break;
+
+				}
 			}
 
+			if (count == 0) {
+
+				System.out.println(i);
+				totalPrime++;
+			}
+
+			count = 0;
+
 		}
 
-		if (count == 0) {
-			System.out.println("Prime number");
-
-		} else {
-			System.out.println("Not prime");
-
-		}
+		System.out.println("Total prime number = " + totalPrime);
 
 	}
-
 }
