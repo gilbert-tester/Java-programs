@@ -24,21 +24,8 @@ public class Largest_Smallest {
 
 		}
 		System.out.println(largest + " is the largest number");
-		System.out.println(smallest + " is the smallest number");
-
+		// System.out.println(smallest + " is the smallest number");
 		
-		/*System.out.println("Enter any series of number :");
-		int smallest = sc.nextInt();
-
-		while (sc.hasNextInt()) {
-
-			int input = sc.nextInt();
-			if (input < smallest) {
-				smallest = input;
-			}
-
-		}
-		System.out.println(smallest + " is the smallest number");*/
 	}
 
 }
